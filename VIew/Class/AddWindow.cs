@@ -50,5 +50,9 @@ namespace test.VIew.Class
                 }
             }
         }
+
+        private void Convert(string text) {
+            
+        }
     }
 }

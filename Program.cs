@@ -21,11 +21,12 @@ namespace test
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             LoginWindow loginWindow = new LoginWindow();
-            Application.Run(loginWindow);
+            //Application.Run(loginWindow);
             MainWindow mainWindow = new MainWindow();
             AddWindow addWindow = new AddWindow();
             MainPresenter presenter = new MainPresenter(mainWindow, addWindow);
             Application.Run(mainWindow);
+            //System.Windows.Forms.Application.Exit();
         }
     }
 }

@@ -8,6 +8,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using test.Presenter.Class;
 using test.VIew.Class;
 using test.VIew.Interface;
 
@@ -32,6 +33,9 @@ namespace test
             comander.Click += checkTable;
             documentofdetention.Click += checkTable;
             stolenitems.Click += checkTable;
+            city.Click += checkTable;
+            street.Click += checkTable;
+            visittoapartment.Click += checkTable;
         }
         public void AddButton(EventHandler addTable)
         {
@@ -104,6 +108,15 @@ namespace test
                 this.find.BackColor = System.Drawing.SystemColors.ControlDarkDark;
                 this.find.ForeColor = System.Drawing.SystemColors.ButtonFace;
 
+                this.city.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+                this.city.ForeColor = System.Drawing.SystemColors.ButtonFace;
+
+                this.street.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+                this.street.ForeColor = System.Drawing.SystemColors.ButtonFace;
+
+                this.visittoapartment.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+                this.visittoapartment.ForeColor = System.Drawing.SystemColors.ButtonFace;
+
                 this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             }
         }
@@ -157,6 +170,15 @@ namespace test
                 this.find.BackColor = System.Drawing.SystemColors.ButtonFace;
                 this.find.ForeColor = System.Drawing.Color.Black;
 
+                this.city.BackColor = System.Drawing.SystemColors.ButtonFace;
+                this.city.ForeColor = System.Drawing.Color.Black;
+
+                this.street.BackColor = System.Drawing.SystemColors.ButtonFace;
+                this.street.ForeColor = System.Drawing.Color.Black;
+
+                this.visittoapartment.BackColor = System.Drawing.SystemColors.ButtonFace;
+                this.visittoapartment.ForeColor = System.Drawing.Color.Black;
+
                 this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             }
         }
@@ -169,6 +191,15 @@ namespace test
         {
 
         }
+
+        private void запросникToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsoleWindow ConsoleWindow = new ConsoleWindow();
+            DocumentsPresenter documentWindow = new DocumentsPresenter(ConsoleWindow);
+            ConsoleWindow.Show();
+        }
+
+
         //private void ChangeToEnglish(object sender, EventArgs e)
         //{
         //    this.apartment.Text = "Apartment";
@@ -185,6 +216,7 @@ namespace test
         //    this.change.Text = "Change";
         //    this.find.Text = "Find";
         //}
+
         //private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         //{
         //    ChangeToEnglish(sender, e);

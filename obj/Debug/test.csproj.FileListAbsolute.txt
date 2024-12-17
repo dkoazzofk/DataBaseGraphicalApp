@@ -42,3 +42,4 @@ C:\Users\zotov\source\repos\test\test\obj\Debug\test.csproj.Up2Date
 C:\Users\zotov\source\repos\test\test\obj\Debug\test.VIew.Class.AddWindow.resources
 C:\Users\zotov\source\repos\test\test\obj\Debug\test.VIew.Class.LoginWindow.resources
 C:\Users\zotov\source\repos\test\test\obj\Debug\test.VIew.Class.AboutWindow.resources
+C:\Users\zotov\source\repos\test\test\obj\Debug\test.VIew.Class.ConsoleWindow.resources

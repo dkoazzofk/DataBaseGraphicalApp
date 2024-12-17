@@ -42,7 +42,7 @@ namespace test.VIew.Class
             }
             if (loginPresenter.authorization(userLogin, userPassword)){ 
                 MessageBox.Show("Успешный вход!");
-                this.Hide();
+                Hide();
                 AddWindow add = new AddWindow();
                 MainPresenter presenter = new MainPresenter(_mainWindow, add);
                 _mainWindow.Show();
